@@ -82,9 +82,6 @@ public class ViatomDesktopImporterCSV : IOximetryImporter
 		DateTime currentDateTime = DateTime.MinValue;
 		DateTime lastDateTime    = DateTime.MinValue;
 
-		// TODO: Figure out how to add configuration options to importers 
-		double timeAjustSeconds = 0;
-
 		while( !reader.EndOfStream )
 		{
 			lastDateTime = currentDateTime;
@@ -107,8 +104,6 @@ public class ViatomDesktopImporterCSV : IOximetryImporter
 			{
 				return null;
 			}
-
-			currentDateTime = currentDateTime.AddSeconds( timeAjustSeconds );
 
 			// Remove the quoted date column and leave the rest of the data (added 2 to skip the quote and the comma)
 			line = line.Substring( quoteIndex + 2 );

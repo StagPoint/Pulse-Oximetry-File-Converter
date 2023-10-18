@@ -2,13 +2,26 @@
 
 using OximetryConverter.Exporters;
 
+if( args.Length > 0 )
+{
+	var workingFolder = args[0].Trim( '"' );
+	if( !Directory.Exists( workingFolder ) )
+	{
+		Console.WriteLine( "Argument is not a valid existing directory path" );
+		return;
+	}
+
+	Console.WriteLine( $"Setting working path to {workingFolder}" );
+	
+	Environment.CurrentDirectory = workingFolder;
+}
+
 var exporter = new MedViewExporter();
 
 var files = Directory.GetFiles( Directory.GetCurrentDirectory(), "*.csv" );
 if( files.Length == 0 )
 {
 	Console.WriteLine( "No CSV files found in the current directory" );
-	Console.ReadKey();
 
 	return;
 }
@@ -73,12 +86,11 @@ foreach( var filePath in files )
 }
 
 Console.WriteLine();
+Console.WriteLine( "-----------------------------------------------------");
 Console.WriteLine( $"Total number of files found: {numberOfFilesFound}" );
+Console.WriteLine( $"Total converted: {numberOfFilesConverted}" );
 Console.WriteLine( $"Total failed: {numberOfFilesFailed}" );
 Console.WriteLine( $"Total skipped: {numberOfFilesSkipped}" );
-Console.WriteLine( $"Total converted: {numberOfFilesConverted}" );
 Console.WriteLine( $"Unknown file formats: {numberOfUnhandledFiles}" );
-
+Console.WriteLine( "-----------------------------------------------------");
 Console.WriteLine();
-Console.Write( "Press ENTER to exit...");
-Console.ReadKey();
