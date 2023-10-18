@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-
-using cpap_app.Importers;
+﻿using cpap_app.Importers;
 
 using OximetryConverter.Exporters;
 
@@ -64,9 +62,14 @@ foreach( var filePath in files )
 	}
 	
 	Console.WriteLine( $"    Exporting '{outputFilename}' ({importer.FriendlyName})" );
-	exporter.Export( session, outputFilename );
-	
-	numberOfFilesConverted += 1;
+	if( exporter.Export( session, outputFilename ) )
+	{
+		numberOfFilesConverted += 1;
+	}
+	else
+	{
+		numberOfFilesFailed += 1;
+	}
 }
 
 Console.WriteLine();

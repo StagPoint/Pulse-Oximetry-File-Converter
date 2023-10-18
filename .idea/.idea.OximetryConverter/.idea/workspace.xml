@@ -12,31 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9cbbebdc-c7d8-40db-a886-547ea9d3a789" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.OximetryConverter/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Pulse Oximetry File Converter/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Pulse Oximetry File Converter/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Pulse Oximetry File Converter/.idea/avalonia.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Pulse Oximetry File Converter/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Pulse Oximetry File Converter/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Pulse Oximetry File Converter/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OximetryConverterConsole/OximetryConverterKey.snk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pulse Oximetry File Converter.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OximetryConverter/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OximetryConverter/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OximetryConverter/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OximetryConverter.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OximetryConverter/Exporters/ExporterRegistry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OximetryConverterConsole/Exporters/ExporterRegistry.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OximetryConverter/Exporters/IOximetryExporter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OximetryConverterConsole/Exporters/IOximetryExporter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OximetryConverter/Exporters/MedViewExporter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OximetryConverterConsole/Exporters/MedViewExporter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OximetryConverter/Importers/EmayImporter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OximetryConverterConsole/Importers/EmayImporter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OximetryConverter/Importers/IOximetryImporter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OximetryConverterConsole/Importers/IOximetryImporter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OximetryConverter/Importers/OximetryImporterRegistry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OximetryConverterConsole/Importers/OximetryImporterRegistry.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OximetryConverter/Importers/Session.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OximetryConverterConsole/Importers/Session.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OximetryConverter/Importers/Signal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OximetryConverterConsole/Importers/Signal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OximetryConverter/Importers/ViatomDesktopCSV.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OximetryConverterConsole/Importers/ViatomDesktopCSV.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OximetryConverter/Importers/ViatomMobileCSV.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OximetryConverterConsole/Importers/ViatomMobileCSV.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OximetryConverter/OximetryConverter.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/OximetryConverterConsole/OximetryConverterConsole.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OximetryConverter/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OximetryConverterConsole/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OximetryConverterConsole/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OximetryConverterConsole/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +159,7 @@
       <updated>1697337106341</updated>
       <workItem from="1697337107435" duration="3223000" />
       <workItem from="1697502037808" duration="1701000" />
-      <workItem from="1697588275517" duration="3875000" />
+      <workItem from="1697588275517" duration="4429000" />
     </task>
     <servers />
   </component>
@@ -199,13 +175,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/OximetryConverterConsole/Program.cs</url>
-          <line>52</line>
+          <line>50</line>
           <properties documentPath="D:\Projects\Desktop\OximetryConverter\OximetryConverterConsole\Program.cs" initialLine="41" containingFunctionPresentation="">
             <startOffsets>
-              <option value="1202" />
+              <option value="1175" />
             </startOffsets>
             <endOffsets>
-              <option value="1252" />
+              <option value="1225" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />

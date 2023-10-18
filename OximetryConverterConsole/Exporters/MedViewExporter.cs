@@ -12,7 +12,7 @@ public class MedViewExporter : IOximetryExporter
 
 	public string GetSuggestedFilename( Session session )
 	{
-		return $"{session.StartTime:yyyy-MM-dd}_{session.StartTime:HH-mm-ss}.dat";
+		return $"{session.StartTime:u}.dat".Replace( ':', '-' ).Replace( "Z", "" );
 	}
 
 	public bool Export( Session data, string exportFullPath )
@@ -55,8 +55,6 @@ public class MedViewExporter : IOximetryExporter
 					// samples if the session's sample rate is larger than one per second. 
 					for( int i = 0; i < sampleInterval; i++ )
 					{
-						var currentPos = writer.BaseStream.Position;
-
 						// 0  0  id yr mm dd hh mm ss o2 pulse
 						writer.Write( (byte)0x00 );
 						writer.Write( (byte)0x00 );
