@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OximetryConverter", "OximetryConverter\OximetryConverter.csproj", "{8AF26237-085B-4443-8677-0E1A232D30C4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OximetryConverterConsole", "OximetryConverterConsole\OximetryConverterConsole.csproj", "{8AF26237-085B-4443-8677-0E1A232D30C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

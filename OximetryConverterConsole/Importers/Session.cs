@@ -15,9 +15,9 @@ public class Session : IComparable<Session>
 
 	#region IComparable<Session> interface implementation 
 		
-	public int CompareTo( Session other )
+	public int CompareTo( Session? other )
 	{
-		return StartTime.CompareTo( other.StartTime );
+		return StartTime.CompareTo( other?.StartTime );
 	}
 		
 	#endregion 
