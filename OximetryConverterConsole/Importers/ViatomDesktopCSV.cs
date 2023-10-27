@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Globalization;
+using System.Text;
 
 namespace cpap_app.Importers;
 
@@ -100,7 +101,7 @@ public class ViatomDesktopImporterCSV : IOximetryImporter
 			var quoteIndex = line.LastIndexOf( '"' );
 			var datePart   = line.Substring( 1, quoteIndex - 1 );
 
-			if( !DateTime.TryParse( datePart, out currentDateTime ) )
+			if( !parseDate( datePart, out currentDateTime ) )
 			{
 				return null;
 			}
@@ -164,6 +165,30 @@ public class ViatomDesktopImporterCSV : IOximetryImporter
 		oxygen.EndTime   = pulse.EndTime   = movement.EndTime   = session.EndTime;
 
 		return session;
+	}
+
+	#endregion
+	
+	#region  Private functions 
+
+	private static bool parseDate( string lineData, out DateTime currentDateTime )
+	{
+		// Apparently Viatom/Wellue will occasionally just randomly change their file format for no apparent reason, 
+		// and one of those recent changes involves the timestamp format. Sheesh. 
+		
+		// Example format "10:00:45 PM Oct 25 2023"
+		if( DateTime.TryParse( lineData, out currentDateTime ) )
+		{
+			return true;
+		}
+
+		// Example format "22:48:36 26/10/2023"
+		if( DateTime.TryParseExact( lineData, "HH:mm:ss dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out currentDateTime ) )
+		{
+			return true;
+		}
+
+		return false;
 	}
 
 	#endregion
